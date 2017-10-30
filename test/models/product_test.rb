@@ -34,7 +34,7 @@ class ProductTest < ActiveSupport::TestCase
       description: "yyy",
       price: 1,
       image_url: image_url)
-    end
+  end
 
   test "image url" do
     ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg
