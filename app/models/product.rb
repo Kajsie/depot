@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   validates :title, uniqueness: { message: "already taken sorry" }
   validates :title, length: { minimum: 10 }
   validates :image_url, allow_blank: true, format: {
-    with: %r{\.gif|jpg|png\Z}i,
+    with: %r{\.(gif|jpg|png)\Z}i,
     message: 'must be a URL for GIF, PNG or JPG image.'
   }
 end
